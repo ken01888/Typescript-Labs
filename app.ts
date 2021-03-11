@@ -14,6 +14,7 @@ let sayHello = () =>{
     alert('Hello World')
 }
 
+// function to validate age
 let checkAge = (name:string,age:number)=>{
     if(age<21){
         console.log(`Sorry ${name}, you aren't old enough to view this page!`)
@@ -26,7 +27,7 @@ checkAge("Abby",27)
 checkAge("James",18)
 checkAge("John",17)
 
-
+//looping through fruits
 let favFruits:string[]=['Apples','Oranges','Bananas','Grapes','Kiwis','Strawberries']
  console.log(favFruits)
 
@@ -34,6 +35,7 @@ let favFruits:string[]=['Apples','Oranges','Bananas','Grapes','Kiwis','Strawberr
      console.log(fruit)
  });
 
+ //creating object of animals
  interface Animals{
         name:string;
         breed:string;
@@ -46,6 +48,7 @@ let favFruits:string[]=['Apples','Oranges','Bananas','Grapes','Kiwis','Strawberr
 
  console.log(cat)
 
+ //creating array of people objects
 interface People{
     name:string;
     age:number;
@@ -79,6 +82,8 @@ persons.forEach(person=>{
     console.log(`Hello my name is ${person.name} I'm ${person.age} years of age.`)
 })
 
+
+//checking the lenght of a word
 let getLength  =(word:string):void=>  {
     if (word.length%2==0){
         console.log('The world is nice and even!')
@@ -87,4 +92,7 @@ let getLength  =(word:string):void=>  {
     }
 }
 
-getLength('hhd')
+getLength('Hello World')
+getLength('Hello Worlds')
+
+

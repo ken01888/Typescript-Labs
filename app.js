@@ -10,6 +10,7 @@ console.log(sum);
 var sayHello = function () {
     alert('Hello World');
 };
+// function to validate age
 var checkAge = function (name, age) {
     if (age < 21) {
         console.log("Sorry " + name + ", you aren't old enough to view this page!");
@@ -22,6 +23,7 @@ checkAge("Charles", 21);
 checkAge("Abby", 27);
 checkAge("James", 18);
 checkAge("John", 17);
+//looping through fruits
 var favFruits = ['Apples', 'Oranges', 'Bananas', 'Grapes', 'Kiwis', 'Strawberries'];
 console.log(favFruits);
 favFruits.forEach(function (fruit) {
@@ -57,6 +59,7 @@ var persons = [
 persons.forEach(function (person) {
     console.log("Hello my name is " + person.name + " I'm " + person.age + " years of age.");
 });
+//checking the lenght of a word
 var getLength = function (word) {
     if (word.length % 2 == 0) {
         console.log('The world is nice and even!');
@@ -65,4 +68,5 @@ var getLength = function (word) {
         console.log('The world is an odd place!');
     }
 };
-getLength('hhd');
+getLength('Hello World');
+getLength('Hello Worlds');
